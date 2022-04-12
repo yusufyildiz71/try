@@ -25,7 +25,7 @@ class _VideoState extends State<Video> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      
+      debugShowCheckedModeBanner: false,
       title: 'Video Demo',
       home: Scaffold(
         body: Center(
@@ -39,6 +39,7 @@ class _VideoState extends State<Video> {
               
         ),
         floatingActionButton: FloatingActionButton(
+          
           onPressed: () {
             setState(() {
               _controller.value.isPlaying
@@ -48,7 +49,8 @@ class _VideoState extends State<Video> {
           },
          
           child: Icon(
-            _controller.value.isPlaying ? Icons.pause : Icons.play_arrow,
+           _controller.value.isPlaying ? Icons.pause  : Icons.play_arrow,
+            size: 30.0,
           ),
           
         ),
