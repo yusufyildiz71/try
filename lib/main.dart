@@ -55,7 +55,9 @@ class _MainPageState extends State<MainPage> {
               SizedBox(
                 height: double.infinity,
                 width: 880,
-                child: Column(children: [
+                child: Column(
+                  
+                  children: [
                   Text(
                     "sorusorusorusorusorusorusorusorusorusorusorusorusorusorusorusorusorusorusorusorusorusorusorusorusorusorusorusorusorusoruso",
                     style: DefaultTextStyle.of(context)
