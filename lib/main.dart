@@ -1,6 +1,7 @@
 import 'dart:html';
 
 import 'package:flutter/material.dart';
+import 'package:try_tidyes/video.dart';
 
 void main()=>runApp(MyApp());
 
@@ -40,17 +41,12 @@ class _MainPageState extends State<MainPage> {
       color: Colors.black,
       height: 130.0,
       
-      child: Center(child: Row(
-        children: <Widget>[
-         
-          Row(
-            children: <Widget>[
-              Text("selam")
-              
-            ],
-          )
-        ],
-      )),
+      
+    child: SizedBox(
+      child: Video(),
+      height: double.infinity,
+      width: 200,
+      )
     );
   }
 }
