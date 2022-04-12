@@ -58,13 +58,15 @@ class _MainPageState extends State<MainPage> {
                 child: Column(
                   
                   children: [
-                  Text(
-                    "sorusorusorusorusorusorusorusorusorusorusorusorusorusorusorusorusorusorusorusorusorusorusorusorusorusorusorusorusorusoruso",
+                    Center( child: Text(
+                    "Videoda anlatılan sözcüğü bulunuz.",
+                    
                     style: DefaultTextStyle.of(context)
                         .style
                         .apply(fontSizeFactor: 2.0),
                         textAlign: TextAlign.center,
-                  )
+                        
+                  ))                
                 ]),
               )
             ],
@@ -76,6 +78,11 @@ class _MainPageState extends State<MainPage> {
       child: Video(),
       height: double.infinity,
       width: 200,
+
+      style: DefaultTextStyle.of(context)
+                        .style
+                        .apply(fontSizeFactor: 2.0),
+                        textAlign: TextAlign.center,
       )*/
     );
   }
